@@ -65,7 +65,7 @@ callButtons.forEach(function (button) {
     `;
 
     
-    historyContainer.prepend(historyItem);
+    historyContainer.append(historyItem);
   });
 });
 
