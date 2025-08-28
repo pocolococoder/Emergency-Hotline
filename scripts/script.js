@@ -97,7 +97,7 @@ copyButtons.forEach(function(button) {
       copyCount++;
       navbarCopyCounter.innerText = copyCount;
 
-      alert(`Hotline number ${hotlineNumber} copied!`);
+      alert(`Hotline Number ${hotlineNumber} copied!`);
     });
   });
 });
