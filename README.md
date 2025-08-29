@@ -43,11 +43,16 @@ Answer: Event delegation means attaching an event listener to a parent element i
  	2. Works for dynamically added elements.
       
 
-  Example: document.querySelector("ul").addEventListener("click", function(e) {
+  Example:  document.querySelector("ul").addEventListener("click", function(e) {
+  
   if(e.target.tagName === "LI"){
+  
   console.log("Clicked on:", e.target.textContent);
+  
   }
+  
   });
+  
 
 
 .
