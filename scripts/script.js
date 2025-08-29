@@ -1,3 +1,5 @@
+//Heart icon increase interaction
+
 const hearts = document.getElementsByClassName('heart-icon');
 
 for(const heart of hearts){
@@ -12,7 +14,7 @@ for(const heart of hearts){
 
 
 
-// container and  clear button section
+// call and clear button interaction
 
 const callButtons = document.querySelectorAll(".call-button");
 
@@ -77,6 +79,7 @@ clearBtn.addEventListener("click", function () {
 
 
 
+//Copy button interaction
 
 const copyButtons = document.querySelectorAll(".btn i.fa-copy, .btn .fa-copy");
 
