@@ -39,10 +39,9 @@ Answer: Event bubbling is when an event on a child element first triggers on tha
 
 Answer: Event delegation means attaching an event listener to a parent element instead of each child. The event bubbles up, and you check which child triggered it.
        Why useful?
-
-       Uses fewer event listeners → better performance.
-
-       Works for dynamically added elements.
+	1. Uses fewer event listeners - better performance.
+ 	2. Works for dynamically added elements.
+      
 
   Example: document.querySelector("ul").addEventListener("click", function(e) {
   if(e.target.tagName === "LI"){
