@@ -39,7 +39,7 @@ callButtons.forEach(function (button) {
     let currentCoins = parseInt(coinCounter.innerText);
 
     if (currentCoins < 20) {
-      alert("Not enough coins to make a call!");
+      alert("Not enough coins to make a call!❌");
       return;
     }
 
@@ -48,7 +48,7 @@ callButtons.forEach(function (button) {
     coinCounter.innerText = currentCoins;
 
 
-    alert(`Calling ${serviceName} (${serviceNum})`);
+    alert(`📞 Calling ${serviceName} (${serviceNum})`);
 
 
     const now = new Date();
@@ -100,7 +100,7 @@ copyButtons.forEach(function(button) {
       copyCount++;
       navbarCopyCounter.innerText = copyCount;
 
-      alert(`Hotline Number ${hotlineNumber} copied!`);
+      alert(`📋 Hotline Number ${hotlineNumber} copied!`);
     });
   });
 });
