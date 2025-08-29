@@ -4,25 +4,29 @@ Answer: Difference between getElementById, getElementsByClassName, and querysele
 
 getElementById('id')- Selects only one element by its unique id .Returns the element directly.
 .
+.
 getElementsByClassName('class')- Selects all elements with that class . Returns a live HTML  collection (Updates if DOM Changes).
+.
 .
 queryselector('selector')- Selects the first element that matches a CSS selector (id,class,tag etc)
 .
+.
 queryselectorAll('selector')- Selects all elements that match a CSS selector. Return a static NodeList('Doesn't auto update).
+.
+.
        
 
-       
 2.    How do you create and insert a new element into the DOM?
   
-Answer: Create an element - document.createElement("tag")
-       Add content/attributes - element.textContent = "Hello"
-
-       Insert into DOM - parent.appendChild(element)
-
-    Example:
-              let p = document.createElement("p");
-              p.textContent = "This is a new paragraph";
-              document.body.appendChild(p);
+Answer: Create an element - Step-1 - document.createElement('tag')
+							Step-2 - Add content/attributes - element.textContent = "Hello"
+	   						Step-3 - Insert into DOM - parent.appendChild(element)
+		  .
+		.
+  Example: let p = document.createElement("p")
+;
+p.textContent = "This is a new paragraph";
+document.body.appendChild(p);
  .             
               
 3.	What is Event Bubbling and how does it work?
@@ -40,13 +44,13 @@ Answer: Event delegation means attaching an event listener to a parent element i
 
        Works for dynamically added elements.
 
-  Example:
+  Example: document.querySelector("ul").addEventListener("click", function(e) {
+  if(e.target.tagName === "LI"){
+  console.log("Clicked on:", e.target.textContent);
+  }
+  });
 
-      document.querySelector("ul").addEventListener("click", function(e) {
-      if (e.target.tagName === "LI") {
-     console.log("Clicked on:", e.target.textContent);
-      }
-     });
+
 .
 
 5.    What is the difference between preventDefault() and stopPropagation() methods?
